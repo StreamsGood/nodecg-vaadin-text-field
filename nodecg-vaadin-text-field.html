@@ -1,0 +1,38 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../nodecg-replicant/nodecg-replicant.html">
+<link rel="import" href="../vaadin-text-field/vaadin-text-field.html">
+
+<dom-module id="nodecg-vaadin-text-field">
+	<template><nodecg-replicant replicant-name="[[replicantName]]" replicant-bundle="[[replicantBundle]]" value="{{value}}"></nodecg-replicant></template>
+
+	<script>
+		(function() {
+			let childTemplate;
+
+			class NodeCGVaadinTextField extends Vaadin.TextFieldElement {
+				static get is() {
+					return "nodecg-vaadin-text-field";
+				}
+
+				static get properties() {
+					return {
+						replicantName: String,
+						replicantBundle: String
+					}
+				}
+
+				static get template() {
+					if (!childTemplate) {
+						childTemplate = Polymer.DomModule.import('nodecg-vaadin-text-field', 'template');
+						let parentTemplate = document.importNode(Vaadin.TextFieldElement.template.content, true);
+						childTemplate.content.appendChild(parentTemplate);
+					}
+
+					return childTemplate;
+				}
+			}
+
+			customElements.define(NodeCGVaadinTextField.is, NodeCGVaadinTextField);
+		})();
+	</script>
+</dom-module>

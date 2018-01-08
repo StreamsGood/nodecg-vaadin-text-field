@@ -1,0 +1,21 @@
+{
+  "name": "nodecg-vaadin-text-field",
+  "homepage": "https://github.com/StreamsGood/nodecg-vaadin-text-field",
+  "version": "1.0.0",
+  "authors": [
+    "Brendan Hagan (haganbmj)"
+  ],
+  "description": "Extends vaadin-text-field with NodeCG replicant support.",
+  "main": "nodecg-vaadin-text-field.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "polymer": "polymer/polymer#^2.3.1",
+    "vaadin-text-field": "vaadin/vaadin-text-field#^1.1.0",
+    "nodecg-replicant": "NodeCGElements/nodecg-replicant#^1.0.1"
+  }
+}
