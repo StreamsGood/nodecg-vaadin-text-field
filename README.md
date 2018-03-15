@@ -1,5 +1,8 @@
 # nodecg-vaadin-text-field
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/StreamsGood/nodecg-vaadin-text-field.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/StreamsGood/nodecg-vaadin-text-field.svg?branch=master)](https://travis-ci.org/StreamsGood/nodecg-vaadin-text-field)
+
 ```sh
 bower install StreamsGood/nodecg-vaadin-text-field --save
 ```
